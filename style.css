@@ -112,6 +112,7 @@ nav {
   position: relative;
 }
 
+/*
 .home::before {
   position: absolute;
   top: 0;
@@ -123,6 +124,7 @@ nav {
   width: 50%;
   background: #3e64ff;
 }
+*/
 .about {
   display: grid;
   grid-template-columns: auto auto;
