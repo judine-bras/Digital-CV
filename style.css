@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: "Mukta", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+  background-color: #fbe3e8;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -59,6 +59,7 @@ nav {
   right: 0;
   z-index: -1;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav-items {
@@ -66,6 +67,10 @@ nav {
   padding: 10px 75px;
 }
 
+.nav-items hover{
+	color:#5cbdb9;
+  
+}
 .nav-item {
   padding: 0 15px;
   font-size: 20px;
@@ -139,16 +144,43 @@ nav {
 }
 
 .about-text {
-  flex: 1;
+  width = 100%;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 25px;
+  padding: 50px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+.about-textL{
+	flex = 1;
+	background:#5cbdb9 ;
+	padding: 30px;
+	margin: 3px
+}
+.about-textM{
+	flex = 1;
+	background:#fbe3e8;
+    padding: 30px;	
+	margin: 3px
 }
 
+.about-textR{
+	flex = 1;
+	background:#ebf6f5;
+    padding: 30px;	
+	margin: 3px
+}
+@media screen and (max-width:768px){
+	.about-text{
+		flex-direction:column;
+	}
+}
 .heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
+  padding: 50px
+  text-align: center;
+  
+  
 }
 
 /* Skills */
@@ -279,6 +311,10 @@ nav {
   font-size: 40px;
 }
 
+.section-title-desciption {
+  text-align: right-align;
+  font-size: 20px;
+}
 .work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
